@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    border: 1px solid black;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 10;
+    align-items: center;
+}
+
+/* Logo Styling */
+.log {
+    height: 8vh;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.log img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Services Links */
+.Services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 350px;
+}
+
+.Services a {
+    text-decoration: none;
+    margin-right: 50px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 5s ease-in-out;
+}
+
+.Services a:hover {
+    background-color: #555;
+    color: #45a049;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Register Button */
+.Services button {
+    height: 40px;
+    width: 120px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 5s ease-in-out;
+    margin-left: 100px;
+}
+
+.Services button:hover {
+    background-color: #45a049;
+}
+
+
+.slider {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none; 
+}
+
+.slider img.active {
+    display: block; 
+}
+
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); 
+    z-index: 10;
+}
+
+.buttons button {
+    background-color: rgb(11, 11, 11); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: rgba(19, 3, 3, 0.8);
+}
+
+
+.buttons i {
+    font-size: 24px; 
+}
